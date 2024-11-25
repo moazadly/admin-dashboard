@@ -10,7 +10,7 @@ const TotalUsersCard = (props) => {
         backgroundColor: "#0A1739",
         color: "#fff",
         borderRadius: "6px",
-        width: "22%",
+        width: "23%",
         padding: "16px",
         display: "flex",
         alignItems: "center",
