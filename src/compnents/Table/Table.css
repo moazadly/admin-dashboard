@@ -1,0 +1,103 @@
+.table {
+  margin: auto;
+}
+.table-container {
+  background-color: #0a1739;
+  border-radius: 15px;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  box-shadow: 0px 0px 1px 0px;
+}
+hr {
+  border-color: #666;
+  margin: 0;
+}
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+.user-table th {
+  background-color: #0a1739;
+  font-weight: 500;
+}
+.user-table th,
+.user-table td {
+  padding: 15px 40px;
+  text-align: left;
+}
+.user-table th:first-child,
+.user-table td:first-child {
+  padding-right: 5px;
+}
+.user-table th:not(:first-child),
+.user-table td:not(:first-child) {
+  width: 22%;
+}
+.user-table td {
+  font-weight: 400;
+  font-size: 14px;
+  color: #aaa;
+}
+
+.status-button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  width: fit-content;
+  box-shadow: 0px 0px 1px 0px;
+}
+
+.status-button.active {
+  background-color: #0b3639;
+  color: green;
+}
+
+.status-button.inactive {
+  background-color: #39425f;
+}
+.custom-checkbox {
+  appearance: none; /* Remove the default checkbox style */
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border: 2px solid #666;
+  border-radius: 4px; /* Optional: for a rounded checkbox */
+  cursor: pointer;
+  outline: none;
+  position: relative;
+}
+
+.custom-checkbox:checked {
+  background-color: #c240f6;
+  border-color: #c240f6; /* Optional: make the border match the background */
+}
+.custom-checkbox:checked::after {
+  content: "✔"; /* Unicode or plain text for checkmark */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 12px; /* Adjust size of the checkmark */
+  color: white; /* Color of the checkmark */
+}
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pagination button {
+  padding: 5px 10px;
+  margin: 0 5px;
+  background-color: #29293d;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.pagination button:hover {
+  background-color: #444;
+}
